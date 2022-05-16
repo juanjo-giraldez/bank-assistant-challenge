@@ -7,9 +7,10 @@
     display: flex;
     flex-direction: row;
     height: 100px;
+
     .number {
       color: #fff;
-      font-size: .8em;
+      font-size: 0.8em;
       padding: 1.5em;
       background-color: #788f9c;
       border-radius: 100px;
@@ -19,7 +20,7 @@
     .bar {
       display: inline-block;
       background-color: #788f9c;
-      width: .52em;
+      width: 0.52em;
       margin: 50% 0;
     }
     .active {

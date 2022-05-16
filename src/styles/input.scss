@@ -1,0 +1,22 @@
+.input-container {
+    > div {
+        width: 281px;
+    }
+    display: flex;
+    margin-right: 2em;
+    input {
+        border: 1px solid #ababab;
+        margin-top: 1em;
+        width: 230px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    label {
+        color: #345568;
+        font-style: 1.2em;
+        font-weight: 900;
+    }
+    input, label {
+    display:block;
+}
+}

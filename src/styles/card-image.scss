@@ -1,8 +1,11 @@
 .card-image {
   display: inline-block;
   width: 100%;
+  margin-bottom: 2em;
   @media (min-width: 768px) {
+    display: grid;
     width: 50%;
+    margin-bottom: 1em;
   }
 
   .image {
