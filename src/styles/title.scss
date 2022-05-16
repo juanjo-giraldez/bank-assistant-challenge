@@ -1,0 +1,14 @@
+.title {
+  font-size: 2.2em;
+  font-weight: bold;
+
+  &::after {
+    // display: inline-block;
+    content: '';
+    height: 0.1em;
+    width: 2em;
+    background-color: #40c3df;
+    margin: 10px 0;
+    display: block;
+  }
+}

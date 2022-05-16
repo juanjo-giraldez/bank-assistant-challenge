@@ -1,0 +1,29 @@
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #ccd5db;
+  .bullet {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    .number {
+      color: #fff;
+      font-size: .8em;
+      padding: 1.5em;
+      background-color: #788f9c;
+      border-radius: 100px;
+      width: 1.2em;
+      text-align: center;
+    }
+    .bar {
+      display: inline-block;
+      background-color: #788f9c;
+      width: .52em;
+      margin: 50% 0;
+    }
+    .active {
+      background-color: #092a45;
+    }
+  }
+}

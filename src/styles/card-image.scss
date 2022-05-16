@@ -1,0 +1,18 @@
+.card-image {
+  display: inline-block;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  .image {
+    display: block;
+    margin: auto;
+  }
+  .text {
+    display: block;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+}

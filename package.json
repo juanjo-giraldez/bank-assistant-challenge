@@ -13,7 +13,7 @@
   },
   "scripts": {
     "lint": "eslint",
-    "lint:fix": "eslint --fix --ext .js",
+    "lint:fix": "eslint --fix , --ext .js",
     "build": "react-scripts build",
     "start": "react-scripts start",
     "test": "react-scripts test"

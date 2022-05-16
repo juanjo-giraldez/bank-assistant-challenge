@@ -1,0 +1,28 @@
+.stantard {
+  border: none;
+  background: transparent;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1.5em;
+}
+
+.dark {
+  @extend .stantard;
+  background: #092a45;
+  color: #fff;
+
+  &::after {
+    content: ' \003e ';
+    color: #fff;
+  }
+}
+
+.pink {
+  @extend .stantard;
+  background: transparent;
+  color: hsl(340deg 79% 50%);
+
+  &::after {
+    content: ' \003e ';
+  }
+}
