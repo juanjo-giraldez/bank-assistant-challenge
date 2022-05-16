@@ -1,0 +1,62 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+      },
+    
+    "extends": [
+        "airbnb"
+    ],
+    "rules": {
+      
+      "react/prop-types": "off",
+      "react/prefer-stateless-function": 2,
+      "react/function-component-definition": [
+        0,{"namedComponents": "function-declaration"}
+      ],
+      "react/jsx-curly-brace-presence": 2,
+      "react/forbid-prop-types": 2,
+      "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
+      "react/destructuring-assignment": 2,
+      "react/sort-comp": 2,
+      "react/require-default-props": 2,
+      "react/react-in-jsx-scope": "off",
+      "react/no-unescaped-entities": 0,
+      "react/arrow-body-style": [0,"always"],
+      "react/jsx-quotes": [0,"prefer-double"],
+      
+      "react/no-trailing-spaces": 0,
+      "arrow-body-style": ["error", "as-needed", {
+        "requireReturnForObjectLiteral": false,
+      }],
+      // "quotes": [2, "single", { "avoidEscape": true }],
+      "quotemark": [
+        true,
+        "single" 
+      ],
+      "padded-blocks": 0,
+      "key-spacing": [ 0, {
+        "align": "colon",
+        "beforeColon": true, 
+        "afterColon": true,
+        "mode": "minimum", 
+        "singleLine": { }, 
+        "multiLine": { }
+        }],
+      "curly": ["error", "all"],
+      "no-console": 2
+      },
+
+     
+      
+      "parserOptions":{
+        "ecmaVersion": 6,
+        "requireConfigFile": false,
+            "babelOptions": {
+            "presets": ["@babel/preset-react"]
+            }
+        },
+      "plugins": ["prettier"]
+    
+}

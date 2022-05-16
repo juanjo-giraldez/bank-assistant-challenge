@@ -5,12 +5,16 @@
   "dependencies": {
     "i18next": "^17.0.16",
     "i18next-browser-languagedetector": "^3.0.3",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-i18next": "^10.12.5",
-    "react-scripts": "3.1.1"
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-i18next": "^11.16.9",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
+    "lint": "eslint",
+    "lint:fix": "eslint --fix --ext .js",
+    "build": "react-scripts build",
     "start": "react-scripts start",
     "test": "react-scripts test"
   },
@@ -30,8 +34,20 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "eslint": "^6.1.0",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-anb": "^1.1.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "prettier": "^2.6.2",
     "sass": "^1.51.0"
   }
 }
