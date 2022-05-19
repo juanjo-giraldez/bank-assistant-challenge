@@ -4,7 +4,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/style-prop-object */
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { t } from 'i18next';
 import { Button } from '../../components/Button';
 import { ProgressBar } from '../../components/ProgressBar';
@@ -17,6 +17,10 @@ import '../../styles/information.scss';
 
 const Information = () => {
   const [onehabilita, setOnehabilita] = useState(null);
+  const navigator = useNavigate();
+
+  const previousPage = () => navigator('/');
+  const nextPage = () => navigator('/form');
 
   const handleCheckboxActive = (event) => {
     setOnehabilita(event.target.checked);
@@ -25,38 +29,28 @@ const Information = () => {
     <div className="card-info">
       <ProgressBar />
       <section className="card-section">
-        <Title title="Bienvenido a Cuenta corriente OpenClose" />
+        <Title title={t('information.titleInformation')} />
         <div className="image">
           <CardImage
             src={thinkingHead}
-            alt="thinking-Head"
-            text="Guarda aquí todas tus contraseñas, datos
-      o cualquier información, olvida las notas
-      de papel y las aplicaciones no protegidas."
+            alt={t('information.thinkingHeadImage')}
+            text={t('information.KeepYourPasswordsSafe')}
           />
           <CardImage
             src={safetyBox}
-            alt="safety-Box"
-            text="Crea tu clave maestra: solo tú podras
-      acceder a tus secretos con ella"
+            alt={t('information.SafeBepositBoxImage')}
+            text={t('information.SafeBepositBox')}
           />
         </div>
-
         <Paragraph
-          title="Cómo funciona"
-          description="En primer lugar, debes crear una
-      contraseña direferente para us pertenencias
-      electrónicas. No podrás recuperar tu contraseña, así
-      que recuérdala bien."
+          title={t('information.titleHowItWorks')}
+          description={t('information.descriptionHowItWorks')}
         />
         <Paragraph
-          title="Qué datos puedes guardar"
-          description="Por ejemplo, el número de tu tarjeta,
-      el PIN y el PUK de teléfono móvil, el número de
-      serie de alguno de tus dispositivos o cualquier
-      información que necesites tener en lugar seguro"
+          title={t('information.titleDataSave')}
+          description={t('information.descriptionDataSave')}
         />
-        <div className="checkbox">
+        <article className="checkbox">
           <input
             className="input"
             id="check1"
@@ -64,22 +58,17 @@ const Information = () => {
             type="checkbox"
             onChange={handleCheckboxActive}
           />
-          <p className="text">
-            Siendo mayor de edad , consiento el tratamiento de mis datos. OPENBANK S. L. tratará mis
-            datos con la finalidad de usos para gestión de mis interese economicos . Puede ejercer
-            sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición,
-            como le informamos en nuestra Política de Privacidad y Aviso Legal.
-          </p>
-        </div>
+          <p className="text">{t('information.terms')}</p>
+        </article>
       </section>
       <footer className="container">
-        <Link to="/">
-          <Button text="cancelar" />
-        </Link>
-
-        <Link to={onehabilita ? '/form' : '#'}>
-          <Button text="siguiente" style="dark" />
-        </Link>
+        <Button text={t('general.cancelButton')} functions={previousPage} />
+        <Button
+          text={t('general.nextButton')}
+          noActive={onehabilita}
+          functions={nextPage}
+          style="dark"
+        />
       </footer>
     </div>
   );

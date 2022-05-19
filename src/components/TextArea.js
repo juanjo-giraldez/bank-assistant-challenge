@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
+import { t } from 'i18next';
 import { stringCounter } from '../hook/stringCounter';
 import '../styles/text-area.scss';
 
@@ -8,12 +9,12 @@ export const TextArea = () => {
 
   return (
     <div className="text-area">
-      <label>Crea tu pista para recordar tu contraseña (opcional)</label>
+      <label>{t('form.titleForm')}</label>
       <div>
-        <input
+        <textarea
           id="clue"
           type="text"
-          placeholder="Introduce tu pista"
+          placeholder={t('form.titleForm')}
           onChange={handleValueChange}
           maxLength={255}
         />

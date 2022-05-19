@@ -8,6 +8,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable-next-line jsx-a11y/label-has-associated-control */
 import React from 'react';
+import { t } from 'i18next';
 import { passwordValidate } from '../hook/passwordValidate.js';
 import { VisibilityOff } from './VisibilityOff';
 import { Visibility } from './Visibility';
@@ -28,12 +29,12 @@ export const Input = () => {
   return (
     <div className="input-container">
       <div className="field-container">
-        <label htmlFor="Password">Crea tu contraseña Maestra</label>
+        <label htmlFor="Password">{t('form.LabelCreatePassword')}</label>
         <input
           type={password.showPasswordOne ? 'text' : 'password'}
           name="password"
           onChange={handleOnChange}
-          placeholder="Contraseña"
+          placeholder={t('form.placeHolderPassword')}
           minLength={8}
           maxLength={24}
           onBlur={validateInput}
@@ -56,12 +57,12 @@ export const Input = () => {
         )}
       </div>
       <div className="field-container">
-        <label htmlFor="Repeat">Repite tu Contraseña Maestra</label>
+        <label htmlFor="Repeat">{t('form.reEnterYourRassword')}</label>
         <input
           type={password.showPasswordTwo ? 'text' : 'password'}
           name="confirmPassword"
           onChange={handleOnChange}
-          placeholder="Repite tu contraseña"
+          placeholder={t('form.placeHoldeReEnter')}
           minLength={8}
           maxLength={24}
           onBlur={validateInput}

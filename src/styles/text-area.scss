@@ -2,10 +2,11 @@
   > div {
     width: 90%;
   }
-  input {
+  textarea {
     border: 1px solid #ababab;
     margin-top: 1em;
     padding: 10px;
+    height: 40px;
     width: 100%;
     border-radius: 5px;
   }
@@ -14,7 +15,7 @@
     font-style: 1.2em;
     font-weight: 900;
   }
-  input,
+  textarea,
   label {
     display: block;
   }

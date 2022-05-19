@@ -3,8 +3,7 @@
         "titleInformation":"Welcome to OpenClose Current Account",
         "thinkingHeadImage":"Thinking about passwords",
         "SafeBepositBoxImage": "Strongbox",
-        "KeepYourPasswordsSafe": "Store all your passwords, data or any other
-        information here, forget about paper notes and unprotected applications" ,
+        "KeepYourPasswordsSafe": "Store all your passwords, data or any otherinformation here, forget about paper notes and unprotected applications",
         "SafeBepositBox": "Create your master key: only you will be able to access your secrets with it",
         "titleHowItWorks": "How it is done",
         "descriptionHowItWorks": "First of all, you must create a different password for your electronic belongings. You will not be able to retrieve your password, so remember it well" , 
@@ -14,7 +13,7 @@
     },
     "form": {
         "titleForm": "Create your Password Manager",
-        "descriptionPasswordManager": "En primer lugar, debes crear una contraseña direferente para us pertenencias electrónicas. No podrás recuperar tu contraseña, así que recuérdala bien.",
+        "descriptionPasswordManager": "First of all, you must create a different password for your electronic belongings. You will not be able to retrieve your password, so remember it well.",
         "LabelCreatePassword": "Create your Master Password",
         "reEnterYourRassword": "Repeat your password",
         "placeHolderPassword": "Password",
