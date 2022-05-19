@@ -16,7 +16,7 @@ const ViewFeedBack = (props) => {
         <img className="success-img" src={CheckSuccess} alt="success-create" />
         <article className="text">
           <h2 className="text-title">{t('feedback.titlesSuccess')}</h2>
-          <p className="text-description">{t('feedback.textSuccess')}</p>
+          <p className="text-description">{t('feedback.textDescription')}</p>
         </article>
       </div>
       <Footer text={t('general.cancelButton')} type="text" footerButton="dark" />

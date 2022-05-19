@@ -5,6 +5,7 @@
 /* eslint-disable consistent-return */
 /* eslint-disable no-console */
 import { useState } from 'react';
+import { t } from 'i18next';
 
 export const passwordValidate = () => {
   const [password, setPassword] = useState({
@@ -68,17 +69,17 @@ export const passwordValidate = () => {
       switch (name) {
         case 'password':
           if (!value) {
-            stateObj[name] = 'Please enter Password.';
+            stateObj[name] = t('form.errorPassword');
           } else if (value === password.confirmPassword) {
-            stateObj[name] = 'Macht.';
+            stateObj[name] = t('form.macht');
           }
           break;
 
         case 'confirmPassword':
           if (!value) {
-            stateObj[name] = 'Please enter Confirm Password.';
+            stateObj[name] = t('form.errorConfirmPassword');
           } else if (value === password.password) {
-            stateObj[name] = 'Macht.';
+            stateObj[name] = t('form.macht');
           }
           break;
 

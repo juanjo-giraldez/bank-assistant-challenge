@@ -50,7 +50,7 @@ export const Input = () => {
         {displayBar()}
         {error.password && (
         <div
-          className={error.password === 'Macht.' ? 'macht' : 'error'}
+          className={error.password === 'Macht' || error.password === 'Coinciden' ? 'macht' : 'error'}
         >
           {error.password}
         </div>
@@ -77,7 +77,7 @@ export const Input = () => {
         </div>
         {error.confirmPassword && (
         <div
-          className={error.confirmPassword === 'Macht.' ? 'macht' : 'error'}
+          className={error.password === 'Macht' || error.password === 'Coinciden' ? 'macht' : 'error'}
         >
           {error.confirmPassword}
         </div>

@@ -20,11 +20,16 @@
         "placeHoldeReEnter": "Repeat your password",
         "commentClue":"You can also create a hint to help you remember your master password.",
         "titleClues": "Create your clue to remember your password (optional)",
-        "clue": "enter your clue"
+        "clue": "enter your clue",
+        "errorPassword": "Please enter Password",
+        "errorConfirmPassword": "Please enter Confirm Password",
+        "macht": "Macht"
     },
     "feedback": {
         "titlesSuccess":"Your Password Manager is now created!",
-        "textDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "textDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "titlesError":"There has been an error",
+        "textError":"We were unable to change your master password. Please try again later."
     },
     "general":{
         "cancelButton": "Cancel",

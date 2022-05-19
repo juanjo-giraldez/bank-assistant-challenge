@@ -9,7 +9,7 @@ export const TextArea = () => {
 
   return (
     <div className="text-area">
-      <label>{t('form.titleForm')}</label>
+      <label>{t('form.titleClues')}</label>
       <div>
         <textarea
           id="clue"

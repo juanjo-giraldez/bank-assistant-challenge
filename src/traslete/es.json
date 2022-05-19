@@ -17,14 +17,19 @@
         "LabelCreatePassword": "Crea tu contraseña Maestra",
         "reEnterYourRassword": "Repite tu Contraseña Maestra",
         "placeHolderPassword": "Contraseña",
-        "placeHoldeReEnter": "Repite tu Contraseña Maestra",
+        "placeHoldeReEnter": "Repite la Contraseña ",
         "commentClue": "Tambien puedes crear una pista que te ayude a recordar tu contraseña maestra.",
         "titleClues": "Crea tu pista para recordar tu contraseña (opcional)",
-        "clue": "introduce tu pista"
+        "clue": "introduce tu pista",
+        "errorPassword": "Introduzca la contraseña",
+        "errorConfirmPassword": "Introduzca la contraseña",
+        "macht": "Coinciden"
     },
     "feedback": {
         "titlesSuccess":"¡Tu Password Manager ya está creado!",
-        "textDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "textSuccess":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "titlesError":"Ha habido un error",
+        "textError":"No hemos podido modificar tu Contraseña Maestra. Inténtalo más tarde"
 
     },
     "general":{
