@@ -1,0 +1,36 @@
+{
+    "information":{
+        "titleInformation":"Bienvenido a Cuenta corriente OpenClose",
+        "thinkingHeadImage":"Pensando contraseñas",
+        "SafeBepositBoxImage": "Caja Fuerte",
+        "KeepYourPasswordsSafe": "Guarda aquí todas tus contraseñas, datos o cualquier información, olvida las notas de papel y las aplicaciones no protegidas.",
+        "SafeBepositBox":"Crea tu clave maestra: solo tú podras acceder a tus secretos con ella",
+        "titleHowItWorks": "Cómo funciona",
+        "descriptionHowItWorks": "En primer lugar, debes crear una contraseña direferente para us pertenencias electrónicas. No podrás recuperar tu contraseña, así que recuérdala bien.",
+        "titleDataSave": "Qué datos puedes guardar",
+        "descriptionDataSave": "Por ejemplo, el número de tu tarjeta, el PIN y el PUK de teléfono móvil, el número de serie de alguno de tus dispositivos o cualquier información que necesites tener en lugar seguro.",
+        "terms": "Siendo mayor de edad , consiento el tratamiento de mis datos. OPENBANK S. L. tratará mis datos con la finalidad de usos para gestión de mis interese economicos . Puede ejercer sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición, como le informamos en nuestra Política de Privacidad y Aviso Legal."
+    },  
+    "form": {
+        "titleForm": "Crea tu Password Manager",
+        "descriptionPasswordManager": "En primer lugar, debes crear una contraseña direferente para us pertenencias electrónicas. No podrás recuperar tu contraseña, así que recuérdala bien.",
+        "LabelCreatePassword": "Crea tu contraseña Maestra",
+        "reEnterYourRassword": "Repite tu Contraseña Maestra",
+        "placeHolderPassword": "Contraseña",
+        "placeHoldeReEnter": "Repite tu Contraseña Maestra",
+        "commentClue": "Tambien puedes crear una pista que te ayude a recordar tu contraseña maestra.",
+        "titleClues": "Crea tu pista para recordar tu contraseña (opcional)",
+        "clue": "introduce tu pista"
+    },
+    "feedback": {
+        "titlesSuccess":"¡Tu Password Manager ya está creado!",
+        "textDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+    },
+    "general":{
+        "cancelButton": "Cancelar",
+        "nextButton": "Siguiente",
+        "successButton": "Acceder",
+        "errorButton": "Volver a Password Manager" 
+    }
+}

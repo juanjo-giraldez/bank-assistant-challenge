@@ -12,6 +12,7 @@
     
     "rules": {
       "import/prefer-default-export": 0,
+      "import/extensions": 0,
       
       "react/prop-types": "off",
       "react/prefer-stateless-function": 2,
@@ -46,11 +47,6 @@
       "arrow-body-style": ["error", "as-needed", {
         "requireReturnForObjectLiteral": false,
       }],
-      // "quotes": [2, "single", { "avoidEscape": true }],
-      // "quotemark": [
-      //   true,
-      //   "single" 
-      // ],
       "padded-blocks": 0,
       "key-spacing": [ 0, {
         "align": "colon",
@@ -63,6 +59,12 @@
       "curly": ["error", "all"],
       "no-console": 2 
     },
+      // "jsx-a11y/label-has-associated-control": [ 0, {
+      //   "labelComponents": ["CustomInputLabel"],
+      //   "labelAttributes": ["label"],
+      //   "controlComponents": ["CustomInput"],
+      //   }],
+
       "parserOptions":{
         "ecmaVersion": 2020,
         "requireConfigFile": false,
@@ -70,6 +72,7 @@
             "presets": ["@babel/preset-react"]
             }
         },
-      "plugins": ["prettier"]
+      "plugins": ["prettier"],
+      "parser": "@babel/eslint-parser"
     
 }

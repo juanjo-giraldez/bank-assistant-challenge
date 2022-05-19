@@ -1,26 +1,24 @@
 .text-area {
-    
-    margin: 2em 0;
-    > div {
-        width: 90%;
-    }
-    input {
-        border: 1px solid #ababab;
-        margin-top: 1em;
-        padding: 10px;
-        width: 100%;
-        border-radius: 5px;
-    }
-    label {
-        color: #345568;
-        font-style: 1.2em;
-        font-weight: 900;
-    }
-    input, label {
-    display:block;
-    
-}
-.counter {
+  > div {
+    width: 90%;
+  }
+  input {
+    border: 1px solid #ababab;
+    margin-top: 1em;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  label {
+    color: #345568;
+    font-style: 1.2em;
+    font-weight: 900;
+  }
+  input,
+  label {
+    display: block;
+  }
+  .counter {
     text-align: end;
-}
+  }
 }

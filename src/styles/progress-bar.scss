@@ -1,30 +1,88 @@
 .progress-bar {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  background-color: #ccd5db;
-  .bullet {
-    display: flex;
-    flex-direction: row;
-    height: 100px;
 
-    .number {
-      color: #fff;
-      font-size: 0.8em;
-      padding: 1.5em;
-      background-color: #788f9c;
-      border-radius: 100px;
-      width: 1.2em;
-      text-align: center;
+  background-color: #ccd5db;
+  .FormStepList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+    margin: auto;
+    width: 200px;
+  }
+
+  .FormStepList-item {
+    flex: 1 1 20px;
+    text-align: center;
+    list-style: none;
+
+    &:before {
+      content: none ;
+      display: none ;
     }
-    .bar {
-      display: inline-block;
-      background-color: #788f9c;
-      width: 0.52em;
-      margin: 50% 0;
+  }
+
+  .FormStepIcon {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    position: relative;
+
+    &.is-active {
+      
+      .FormStepIcon-circle {
+        background: #092a45;
+        transform: scale(1.1, 1.1);
+        color: #fff;
+      }
     }
-    .active {
-      background-color: #092a45;
+
+    &.is-passed {
+      &:after {
+        background: #788f9b
+      }
+
+      .FormStepIcon-circle {
+        background: #788f9b;
+        color: #fff;
+      }
     }
+
+    &:after {
+      content: '';
+      background: #788f9b;
+      position: absolute;
+      right: -100%;
+      top: 20px;
+      left: 10px;
+      height: 4px;
+      z-index: 1;
+    }
+
+    &.FormStepIcon--last {
+      &:after {
+        background: #ccd5db
+      }
+    }
+  }
+
+  .FormStepIcon-circle {
+    background: #788f9b;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .FormStepIcon-title {
+    display: block;
+    font-size: 0.7em;
+    margin-top: 0.5em;
   }
 }

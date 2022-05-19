@@ -1,13 +1,10 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-console */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from 'react';
+import React from 'react';
+import { stringCounter } from '../hook/stringCounter';
 import '../styles/text-area.scss';
 
 export const TextArea = () => {
-  const [input, setInput] = useState('0');
-  const handleValueChange = (e) => setInput(e.currentTarget.value.length);
+  const { input, handleValueChange } = stringCounter();
 
   return (
     <div className="text-area">
@@ -18,11 +15,11 @@ export const TextArea = () => {
           type="text"
           placeholder="Introduce tu pista"
           onChange={handleValueChange}
-          maxLength={60}
+          maxLength={255}
         />
         <p className="counter">
           {input}
-          /60
+          /255
         </p>
       </div>
     </div>
