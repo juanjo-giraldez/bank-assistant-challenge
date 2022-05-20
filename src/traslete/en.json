@@ -9,7 +9,8 @@
         "descriptionHowItWorks": "First of all, you must create a different password for your electronic belongings. You will not be able to retrieve your password, so remember it well" , 
         "titleDataSave": "What data can you save",
         "descriptionDataSave": "For example, your card number, mobile phone PIN and PUK, the serial number of one of your devices or any other information you need to keep safe.",
-        "terms": "Being of legal age, I consent to the processing of my data. OPENBANK S. L. will process my data for the purpose of using it to manage my financial interests. You can exercise your rights of access, rectification, deletion, portability, limitation and opposition, as we inform you in our Privacy Policy and Legal Notice."
+        "terms": "Being of legal age, I consent to the processing of my data. OPENBANK S. L. will process my data for the purpose of using it to manage my financial interests. You can exercise your rights of access, rectification, deletion, portability, limitation and opposition, as we inform you in our Privacy Policy and Legal Notice.",
+        "confirmTerms": "Confirm the terms to continue."
     },
     "form": {
         "titleForm": "Create your Password Manager",
@@ -18,6 +19,7 @@
         "reEnterYourRassword": "Repeat your password",
         "placeHolderPassword": "Password",
         "placeHoldeReEnter": "Repeat your password",
+        "confirmPassword": "Confirm the password to let you continue with the process.",
         "commentClue":"You can also create a hint to help you remember your master password.",
         "titleClues": "Create your clue to remember your password (optional)",
         "clue": "enter your clue",
@@ -35,6 +37,11 @@
         "cancelButton": "Cancel",
         "nextButton": "Next",
         "successButton": "Access",
-        "errorButton": "Return to Password Manager"  
+        "errorButton": "Back to Password Manager"   
+    },
+    "access":{
+        "titlesAccess": "This is the view access",
+        "textDescription": "The process is finished and you can return to the information page.",
+        "accessButton": "Back to information page"
     }
 }

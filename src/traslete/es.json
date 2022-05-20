@@ -6,18 +6,20 @@
         "KeepYourPasswordsSafe": "Guarda aquí todas tus contraseñas, datos o cualquier información, olvida las notas de papel y las aplicaciones no protegidas.",
         "SafeBepositBox":"Crea tu clave maestra: solo tú podras acceder a tus secretos con ella",
         "titleHowItWorks": "Cómo funciona",
-        "descriptionHowItWorks": "En primer lugar, debes crear una contraseña direferente para us pertenencias electrónicas. No podrás recuperar tu contraseña, así que recuérdala bien.",
+        "descriptionHowItWorks": "En primer lugar, debes crear una contraseña direferente para tus pertenencias electrónicas. No podrás recuperar tu contraseña, así que recuérdala bien.",
         "titleDataSave": "Qué datos puedes guardar",
         "descriptionDataSave": "Por ejemplo, el número de tu tarjeta, el PIN y el PUK de teléfono móvil, el número de serie de alguno de tus dispositivos o cualquier información que necesites tener en lugar seguro.",
-        "terms": "Siendo mayor de edad , consiento el tratamiento de mis datos. OPENBANK S. L. tratará mis datos con la finalidad de usos para gestión de mis interese economicos . Puede ejercer sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición, como le informamos en nuestra Política de Privacidad y Aviso Legal."
+        "terms": "Siendo mayor de edad , consiento el tratamiento de mis datos. OPENBANK S. L. tratará mis datos con la finalidad de usos para gestión de mis interese economicos . Puede ejercer sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición, como le informamos en nuestra Política de Privacidad y Aviso Legal.",
+        "confirmTerms": "Confirma las terminos para continuar."
     },  
     "form": {
         "titleForm": "Crea tu Password Manager",
-        "descriptionPasswordManager": "En primer lugar, debes crear una contraseña direferente para us pertenencias electrónicas. No podrás recuperar tu contraseña, así que recuérdala bien.",
+        "descriptionPasswordManager": "En primer lugar, debes crear una contraseña direferente para tus pertenencias electrónicas. No podrás recuperar tu contraseña, así que recuérdala bien.",
         "LabelCreatePassword": "Crea tu contraseña Maestra",
         "reEnterYourRassword": "Repite tu Contraseña Maestra",
         "placeHolderPassword": "Contraseña",
         "placeHoldeReEnter": "Repite la Contraseña ",
+        "confirmPassword": "Confirma la contraseña para que te deje continuar con el proceso.",
         "commentClue": "Tambien puedes crear una pista que te ayude a recordar tu contraseña maestra.",
         "titleClues": "Crea tu pista para recordar tu contraseña (opcional)",
         "clue": "introduce tu pista",
@@ -37,5 +39,10 @@
         "nextButton": "Siguiente",
         "successButton": "Acceder",
         "errorButton": "Volver a Password Manager"
+    },
+    "access":{
+        "titlesAccess": "Estas es la vista acceso",
+        "textDescription": "El proceso ha terminado puedes volver a la página de información.",
+        "accessButton": "Volver a la página de información"
     }
 }

@@ -137,6 +137,7 @@ const Form = () => {
             )}
           </div>
         </div>
+        <Paragraph description={t('form.confirmPassword')} />
         <Paragraph description={t('form.commentClue')} />
         <TextArea />
       </section>

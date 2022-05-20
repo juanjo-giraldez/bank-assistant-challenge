@@ -16,7 +16,7 @@ const ViewFeedBack = () => {
   const nav = useNavigate();
   // eslint-disable-next-line prefer-const
   // eslint-disable-next-line no-console
-  console.log(useLocation());
+
   const { state } = useLocation();
   const { success } = state;
 

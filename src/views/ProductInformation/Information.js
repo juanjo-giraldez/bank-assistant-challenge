@@ -61,6 +61,9 @@ const Information = () => {
           />
           <p className="text">{t('information.terms')}</p>
         </article>
+        <Paragraph
+          description={t('information.confirmTerms')}
+        />
       </section>
       <footer className="container">
         <Button text={t('general.cancelButton')} functions={previousPage} />
