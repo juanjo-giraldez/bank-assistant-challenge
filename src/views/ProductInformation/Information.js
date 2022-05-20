@@ -6,28 +6,28 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { t } from 'i18next';
-import { Button } from '../../components/Button';
-import { ProgressBar } from '../../components/ProgressBar';
+import Button from '../../components/Button';
+import ProgressBar from '../../components/ProgressBar';
 import Title from '../../components/Title';
-import { CardImage } from '../../components/CardImage';
-import { Paragraph } from '../../components/Paragraph';
+import CardImage from '../../components/CardImage';
+import Paragraph from '../../components/Paragraph';
 import safetyBox from '../../assets/img/group-3.svg';
 import thinkingHead from '../../assets/img/group.svg';
 import '../../styles/information.scss';
 
 const Information = () => {
   const [onehabilita, setOnehabilita] = useState(null);
-  const navigator = useNavigate();
+  const nav = useNavigate();
 
-  const previousPage = () => navigator('/');
-  const nextPage = () => navigator('/form');
+  const previousPage = () => nav('/');
+  const nextPage = () => nav('/form');
 
   const handleCheckboxActive = (event) => {
     setOnehabilita(event.target.checked);
   };
   console.log('first', onehabilita);
   return (
-    <div className="card-info">
+    <section className="card-info" aria-label="info-product-openclose">
       <ProgressBar />
       <section className="card-section">
         <Title title={t('information.titleInformation')} />
@@ -76,7 +76,7 @@ const Information = () => {
           {t('general.nextButton')}
         </button>
       </footer>
-    </div>
+    </section>
   );
 };
 

@@ -2,7 +2,7 @@
 /* eslint-disable react/style-prop-object */
 import React from 'react'; import { useNavigate } from 'react-router-dom';
 import { t } from 'i18next';
-import { Button } from '../../components/Button';
+import Button from '../../components/Button';
 import '../../styles/modal.scss';
 
 const Access = () => {

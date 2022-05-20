@@ -6,16 +6,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { t } from 'i18next';
-import { Button } from '../../components/Button';
-import { ProgressBar } from '../../components/ProgressBar';
+import Button from '../../components/Button';
+import ProgressBar from '../../components/ProgressBar';
 import Title from '../../components/Title';
-import { Paragraph } from '../../components/Paragraph';
-import { TextArea } from '../../components/TextArea';
+import Paragraph from '../../components/Paragraph';
+import TextArea from '../../components/TextArea';
 import { passwordValidate } from '../../hook/passwordValidate.js';
-import { VisibilityOff } from '../../components/VisibilityOff';
-import { Visibility } from '../../components/Visibility';
+import VisibilityOff from '../../components/VisibilityOff';
+import Visibility from '../../components/Visibility';
 import submitForm from '../../services/api.js';
-import '../../styles/input.scss';
 import '../../styles/form.scss';
 
 const Form = () => {
@@ -31,18 +30,6 @@ const Form = () => {
 
   const nav = useNavigate();
   const previousPage = () => nav('/');
-
-  // eslint-disable-next-line no-unused-vars
-  const handleSubmit = () => {
-    if (
-      password.password.length > 8
-      && password.confirmPassword.length > 8
-      && password.password === password.confirmPassword
-    ) {
-      // eslint-disable-next-line no-use-before-define
-      onSubmit();
-    }
-  };
 
   // eslint-disable-next-line consistent-return
   async function onSubmit(e) {
@@ -66,7 +53,7 @@ const Form = () => {
   }
 
   return (
-    <form onSubmit={onSubmit} className="card-form">
+    <form onSubmit={onSubmit} className="card-form" arial-label="form-Password">
       <ProgressBar />
       <section className="card-section">
         <Title title={t('form.titleForm')} />

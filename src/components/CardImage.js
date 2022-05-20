@@ -1,12 +1,14 @@
 import React from 'react';
 import '../styles/card-image.scss';
 
-export const CardImage = (props) => {
+const CardImage = (props) => {
   const { src, alt, text } = props;
   return (
-    <div className="card-image">
+    <article className="card-image" aria-label="Card-info-image-description">
       <img className="image" src={src} alt={alt} />
-      <p className="text">{text}</p>
-    </div>
+      <p className="text" aria-label="info-image-description">{text}</p>
+    </article>
   );
 };
+
+export default CardImage;

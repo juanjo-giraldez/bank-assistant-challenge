@@ -1,10 +1,12 @@
+/* eslint-disable react/jsx-no-undef */
+/* eslint-disable react/jsx-no-useless-fragment */
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import './App.scss';
 import Information from './views/ProductInformation/Information';
 import Form from './views/Form/Form';
 import ViewFeedBack from './views/Feedback/ViewFeedBack';
 import Access from './views/Access/Access';
+import './App.scss';
 
 function App() {
   return (

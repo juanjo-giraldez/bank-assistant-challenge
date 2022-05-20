@@ -4,12 +4,12 @@ import { t } from 'i18next';
 import { stringCounter } from '../hook/stringCounter';
 import '../styles/text-area.scss';
 
-export const TextArea = () => {
+const TextArea = () => {
   const { input, handleValueChange } = stringCounter();
 
   return (
-    <div className="text-area">
-      <label>{t('form.titleClues')}</label>
+    <article className="text-area" aria-label="text-clue-field">
+      <label aria-label="text-area-label">{t('form.titleClues')}</label>
       <div>
         <input
           id="clue"
@@ -17,12 +17,15 @@ export const TextArea = () => {
           placeholder={t('form.titleForm')}
           onChange={handleValueChange}
           maxLength={255}
+          aria-label="text-area-input"
         />
-        <p className="counter">
+        <p className="counter" aria-label="text-area-counter">
           {input}
           /255
         </p>
       </div>
-    </div>
+    </article>
   );
 };
+
+export default TextArea;

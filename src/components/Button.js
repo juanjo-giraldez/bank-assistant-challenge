@@ -5,7 +5,7 @@
 import React from 'react';
 import '../styles/button.scss';
 
-export const Button = (props) => {
+const Button = (props) => {
   /* eslint no-unsafe-optional-chaining: "error" */
   const { type, text, style, functions } = props;
   return (
@@ -20,3 +20,5 @@ export const Button = (props) => {
     </button>
   );
 };
+
+export default Button;

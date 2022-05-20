@@ -1,17 +1,14 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 import { render, screen } from '@testing-library/react';
-import { MemoryRouter as Router } from 'react-router-dom';
-import { toHaveStyle } from '@testing-library/jest-dom';
-
+import '@testing-library/jest-dom/extend-expect';
 import Title from '../components/Title';
 
-const titleTest = () => render(
-  <Router>
-    <Title title="title-test" />
-  </Router>,
-);
 describe('title component', () => {
+
+  const titleTest = () => render(
+    <Title title="title-test" />,
+  );
   beforeEach(() => {
     titleTest();
   });
@@ -32,9 +29,8 @@ describe('title component', () => {
   it('should render style after in title', async () => {
     const titleClass = await screen.findByRole('heading', { name: 'heading-title' });
 
-    expect(titleClass).toHaveStyle({
-      content: '',
-    });
+    expect(titleClass).toBeInTheDocument();
+    expect(titleClass).toHaveClass('title');
   });
 
 });

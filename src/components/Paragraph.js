@@ -1,12 +1,14 @@
 import React from 'react';
 import '../styles/paragraph.scss';
 
-export const Paragraph = (props) => {
+const Paragraph = (props) => {
   const { title, description } = props;
   return (
-    <article className="paragraph">
-      <h2 className="paragraph-title">{title}</h2>
-      <p className="paragraph-description">{description}</p>
+    <article className="paragraph" aria-label="paragraph-info">
+      <h2 className="paragraph-title" aria-label="paragraph-info-title">{title}</h2>
+      <p className="paragraph-description" aria-label="paragraph-info-description">{description}</p>
     </article>
   );
 };
+
+export default Paragraph;

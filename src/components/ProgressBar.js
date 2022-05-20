@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/progress-bar.scss';
 
-export const ProgressBar = () => {
+const ProgressBar = () => {
 
   const location = useLocation();
 
@@ -28,7 +28,7 @@ export const ProgressBar = () => {
   });
 
   return (
-    <header className="progress-bar">
+    <header className="progress-bar" aria-label="Card-header-Progress-bar">
       <ol className="FormStepList">
         <li className="FormStepList-item">
           <span id="circle-1" className="FormStepIcon ">
@@ -52,3 +52,5 @@ export const ProgressBar = () => {
   );
 
 };
+
+export default ProgressBar;

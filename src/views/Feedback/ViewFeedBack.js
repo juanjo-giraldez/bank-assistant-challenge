@@ -6,10 +6,10 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { t } from 'i18next';
-import { Button } from '../../components/Button';
+import Button from '../../components/Button';
 import Warning from '../../assets/img/Warning.png';
 import CheckSuccess from '../../assets/img/Check_green_circle.png';
-import { ProgressBar } from '../../components/ProgressBar';
+import ProgressBar from '../../components/ProgressBar';
 import '../../styles/modal.scss';
 
 const ViewFeedBack = () => {
@@ -18,62 +18,54 @@ const ViewFeedBack = () => {
   // eslint-disable-next-line no-console
 
   const { state } = useLocation();
-  const { success } = state;
+  const accessPage = () => {
+    nav('/access');
+  };
 
-  const feedBackSucces = () => {
-    const accessPage = () => {
-      nav('/access');
-    };
-    return (
-    <div className="modal">
+  const closeModal = () => {
+    nav('/form');
+  };
+
+  // eslint-disable-next-line no-constant-condition
+  return state.success ? (
+    <div className="modal" aria-label="modal-success">
       <div className="background">
-        <section className="success">
+        <section className="success" aria-label="region-modal-success">
         <ProgressBar />
-          <div className="message">
+          <div className="message" aria-label="article-modal-success">
             <img className="success-img" src={CheckSuccess} alt="success-create" />
             <div className="text">
               <h2 className="text-title">{t('feedback.titlesSuccess')}</h2>
               <p className="text-description">{t('feedback.textDescription')}</p>
             </div>
           </div>
-          <footer className="container">
+          <footer className="container" aria-label="footer-modal-success">
             <div className="footer-btn">
               <Button text={t('general.successButton')} type="Button" style="pink" functions={accessPage} />
             </div>
           </footer>
         </section>
       </div>
-    </div>);
-  };
-
-  const feedBackFailed = () => {
-    const closeModal = () => {
-      nav('/form');
-    };
-    return (
-      <div className="modal">
-        <section className="feedBack">
-        <ProgressBar />
-          <div className="message">
-            <img className="fail-img" src={Warning} alt="Warning-failed" />
-            <div className="text">
-              <h2 className="text-title">{t('feedback.titlesError')}</h2>
-              <p className="text-description">{t('feedback.textError')}</p>
-            </div>
+    </div>) : (
+    <section className="modal" aria-label="section-modal-failed">
+      <div className="feedBack">
+      <ProgressBar />
+        <article className="message" aria-label="article-modal-failed">
+          <img className="fail-img" src={Warning} alt="Warning-failed" />
+          <div className="text">
+            <h2 className="text-title">{t('feedback.titlesError')}</h2>
+            <p className="text-description">{t('feedback.textError')}</p>
           </div>
-          <footer className="container">
-            <div className="footer-btn">
-              <button className="pink" type="Button" onClick={closeModal}>
-                {t('general.errorButton')}
-              </button>
-            </div>
-          </footer>
-        </section>
+        </article>
+        <footer className="container" aria-label="footer-modal-failed">
+          <div className="footer-btn">
+            <button className="pink" type="Button" onClick={closeModal}>
+              {t('general.errorButton')}
+            </button>
+          </div>
+        </footer>
       </div>
-    );
-  };
-
-  // eslint-disable-next-line no-constant-condition
-  return success ? feedBackSucces() : feedBackFailed();
+    </section>
+  );
 };
 export default ViewFeedBack;
