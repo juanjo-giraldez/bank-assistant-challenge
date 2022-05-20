@@ -11,7 +11,7 @@ describe('CardImage component', () => {
   beforeEach(() => {
     cardImageTest();
   });
-  it('should render Paragraph component', async () => {
+  it('should render CardImage component', async () => {
     const cardImage = await screen.findByRole('article', { name: 'Card-info-image-description' });
 
     expect(cardImage).toBeInTheDocument();

@@ -12,11 +12,11 @@ describe('Button component', () => {
     buttonTest();
   });
 
-  it('should render Paragraph component', async () => {
-    const paragraph = await screen.findByRole('link', { name: 'button' });
+  it('should render button component', async () => {
+    const button = await screen.findByRole('link', { name: 'button' });
 
-    expect(paragraph).toBeInTheDocument();
-    expect(paragraph).toHaveClass('stantard');
+    expect(button).toBeInTheDocument();
+    expect(button).toHaveClass('stantard');
   });
 
 });

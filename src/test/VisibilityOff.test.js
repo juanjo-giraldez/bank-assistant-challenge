@@ -4,17 +4,17 @@ import VisibilityOff from '../components/VisibilityOff';
 import '@testing-library/jest-dom/extend-expect';
 
 describe('VisibilityOff component', () => {
-  const testAreaTest = () => render(
+  const visibilityOffTest = () => render(
     <VisibilityOff />,
   );
   beforeEach(() => {
-    testAreaTest();
+    visibilityOffTest();
   });
 
   it('should render VisibilityOff component', async () => {
-    const textArea = await screen.findByRole('img', { name: 'icon-eye-Closed' });
+    const visibilityOff = await screen.findByRole('img', { name: 'icon-eye-Closed' });
 
-    expect(textArea).toBeInTheDocument();
-    expect(textArea).toHaveClass('image-eye');
+    expect(visibilityOff).toBeInTheDocument();
+    expect(visibilityOff).toHaveClass('image-eye');
   });
 });

@@ -12,8 +12,8 @@ describe('Visibility component', () => {
   });
 
   it('should render Visibility component', async () => {
-    const textArea = await screen.findByRole('img', { name: 'icon-eye-open' });
+    const visibility = await screen.findByRole('img', { name: 'icon-eye-open' });
 
-    expect(textArea).toBeInTheDocument();
+    expect(visibility).toBeInTheDocument();
   });
 });
