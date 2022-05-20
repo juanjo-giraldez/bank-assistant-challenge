@@ -1,6 +1,8 @@
+@import '_base' ;
+
 .progress-bar {
 
-  background-color: #ccd5db;
+  background-color: $bg-bar;
   .FormStepList {
     display: flex;
     justify-content: center;
@@ -30,26 +32,26 @@
     &.is-active {
       
       .FormStepIcon-circle {
-        background: #092a45;
+        background: $title-darknes;
         transform: scale(1.1, 1.1);
-        color: #fff;
+        color: $white;
       }
     }
 
     &.is-passed {
       &:after {
-        background: #788f9b
+        background: $circle-bar;
       }
 
       .FormStepIcon-circle {
-        background: #788f9b;
-        color: #fff;
+        background: $circle-bar;
+        color: $white;
       }
     }
 
     &:after {
       content: '';
-      background: #788f9b;
+      background: $circle-bar;
       position: absolute;
       right: -100%;
       top: 20px;
@@ -60,14 +62,14 @@
 
     &.FormStepIcon--last {
       &:after {
-        background: #ccd5db
+        background: $bg-bar;
       }
     }
   }
 
   .FormStepIcon-circle {
-    background: #788f9b;
-    color: #fff;
+    background: $circle-bar;
+    color: $white;
     font-size: 16px;
     font-weight: bold;
     width: 40px;

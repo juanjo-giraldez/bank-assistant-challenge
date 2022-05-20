@@ -25,7 +25,7 @@ const Information = () => {
   const handleCheckboxActive = (event) => {
     setOnehabilita(event.target.checked);
   };
-  console.log('first', onehabilita);
+
   return (
     <section className="card-info" aria-label="info-product-openclose">
       <ProgressBar />

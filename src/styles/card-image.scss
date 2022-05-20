@@ -4,6 +4,7 @@
   margin-bottom: 2em;
   @media (min-width: 768px) {
     display: grid;
+    display: -ms-grid;
     width: 50%;
     margin-bottom: 1em;
   }

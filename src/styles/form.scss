@@ -1,7 +1,9 @@
+@import '_base' ;
+
 .card {
   &-form {
     max-width: 800px;
-    border: 1px solid #989fa4;
+    border: 1px solid $grey-border-color;
     .card-section {
       .input-container {
         display: flex;
@@ -23,15 +25,15 @@
           font-size: 0.2em;
           height: 0.4em;
           width: 60%;
-          color: red;
+          color: $primary-color;
         }
         label {
-          color: #345568;
+          color: $text-dark-blue;
           font-style: 1.2em;
           font-weight: 900;
         }
         input {
-          border: 1px solid #ababab;
+          border: 1px solid $grey-border-color;
           margin-top: 1em;
           font-size: 1em;
           width: 230px;
@@ -51,22 +53,22 @@
         }
         .danger {
           width: 20%;
-          background-color: #f44336;
+          background-color: $bar-danger;
         }
         .warning {
           width: 50%;
-          background-color: #ffc107;
+          background-color: $bar-warning;
         }
       
         .success {
           width: 100%;
-          background-color: #28a745;
+          background-color: $bar-success;
         }
         .error {
-          color:red;
+          color:$primary-color;
         }
         .macht {
-          color:#28a745;
+          color:$bar-success;
         }
       }
       
@@ -75,7 +77,7 @@
       padding: 1.5em;
       display: flex;
       justify-content: space-between;
-      border-top: 0.02em solid #ababab;
+      border-top: 0.02em solid $grey-border-color;
     }
   }
 }

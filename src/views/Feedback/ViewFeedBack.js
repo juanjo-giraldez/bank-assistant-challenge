@@ -16,8 +16,9 @@ const ViewFeedBack = () => {
   const nav = useNavigate();
   // eslint-disable-next-line prefer-const
   // eslint-disable-next-line no-console
-
   const { state } = useLocation();
+  // eslint-disable-next-line no-console
+
   const accessPage = () => {
     nav('/access');
   };
@@ -27,7 +28,7 @@ const ViewFeedBack = () => {
   };
 
   // eslint-disable-next-line no-constant-condition
-  return state.success ? (
+  return (state.success ? (
     <div className="modal" aria-label="modal-success">
       <div className="background">
         <section className="success" aria-label="region-modal-success">
@@ -66,6 +67,6 @@ const ViewFeedBack = () => {
         </footer>
       </div>
     </section>
-  );
+  ));
 };
 export default ViewFeedBack;

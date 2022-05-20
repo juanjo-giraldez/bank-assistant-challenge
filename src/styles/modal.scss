@@ -1,3 +1,5 @@
+@import '_base' ;
+
 body {
   height: 100vh;
   display: flex;
@@ -12,8 +14,8 @@ body {
   align-items: center;
 
   section {
-    background: #fff;
-    border: 1px solid #989fa4;
+    background: $white;
+    border: 1px solid $grey-border-color;
 
     .message {
       padding: 2em;
@@ -29,7 +31,7 @@ body {
         }
         &-description {
           margin-top: 0.3em;
-          color: #345568;
+          color: $text-dark-blue;
         }
       }
     }

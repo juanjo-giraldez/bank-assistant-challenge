@@ -1,3 +1,5 @@
+@import '_base' ;
+
 .stantard {
   border: none;
   background: transparent;
@@ -8,19 +10,19 @@
 
 .dark {
   @extend .stantard;
-  background: #092a45;
-  color: #fff;
+  background: $button-dark-blue;
+  color: $white;
 
   &::after {
     content: ' \003e ';
-    color: #fff;
+  color: $white;
   }
 }
 
 .pink {
   @extend .stantard;
   background: transparent;
-  color: hsl(340deg 79% 50%);
+  color: $button-pink;
 
   &::after {
     content: ' \003e ';

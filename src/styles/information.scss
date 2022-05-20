@@ -1,8 +1,11 @@
+@import '_base' ;
+
 .card {
   &-info {
     max-width: 800px;
-    border: 1px solid #989fa4;
+    border: 1px solid $grey-border-color;
     display: grid;
+    display: -ms-grid;
     .checkbox {
       display: flex;
       position: relative;
@@ -11,7 +14,7 @@
         top: 5px;
       }
       .text {
-        color: #345568;
+        color: $text-dark-blue;
         margin-left: 2em;
       }
     }
@@ -19,7 +22,7 @@
       padding: 1.5em;
       display: flex;
       justify-content: space-between;
-      border-top: 0.02em solid #ababab;
+      border-top: 0.02em solid $grey-border-color;
     }
   }
   &-section {

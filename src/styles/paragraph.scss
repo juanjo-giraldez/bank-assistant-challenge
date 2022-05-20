@@ -1,11 +1,13 @@
+@import '_base' ;
+
 .paragraph {
     &-title {
         font-size: 1.1em;
         font-weight: bold;
-        color: #0c2e47;
+        color: $title-darknes;
     }
     &-description {
-        color: #345568
+        color: $text-dark-blue;
     }
 
 }
