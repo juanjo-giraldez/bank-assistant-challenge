@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/aria-role */
 /* eslint-disable react/style-prop-object */
 import React from 'react'; import { useNavigate } from 'react-router-dom';
 import { t } from 'i18next';
@@ -13,7 +14,7 @@ const Access = () => {
   return (
     <div className="modal">
       <div className="background">
-        <section className="success">
+        <section role="info-page" id="info" className="success" aria-label="section-access-page">
           <div className="message">
             <div className="text">
               <h2 className="text-title">{t('access.titlesAccess')}</h2>

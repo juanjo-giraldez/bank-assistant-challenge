@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/button-has-type */
@@ -9,6 +10,8 @@ export const Button = (props) => {
   const { type, text, style, functions } = props;
   return (
     <button
+      role="link"
+      aria-label="button"
       type={type}
       className={style || 'stantard'}
       onClick={functions}

@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { t } from 'i18next';
 import { Button } from '../../components/Button';
 import { ProgressBar } from '../../components/ProgressBar';
-import { Title } from '../../components/Title';
+import Title from '../../components/Title';
 import { CardImage } from '../../components/CardImage';
 import { Paragraph } from '../../components/Paragraph';
 import safetyBox from '../../assets/img/group-3.svg';

@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { t } from 'i18next';
 import { Button } from '../../components/Button';
 import { ProgressBar } from '../../components/ProgressBar';
-import { Title } from '../../components/Title';
+import Title from '../../components/Title';
 import { Paragraph } from '../../components/Paragraph';
 import { TextArea } from '../../components/TextArea';
 import { passwordValidate } from '../../hook/passwordValidate.js';
