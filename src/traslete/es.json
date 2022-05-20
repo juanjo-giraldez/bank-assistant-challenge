@@ -1,6 +1,6 @@
 {
     "information":{
-        "titleInformation":"Bienvenido a Cuenta corriente queso",
+        "titleInformation":"Bienvenido a Cuenta corriente OpenClose",
         "thinkingHeadImage":"Pensando contraseñas",
         "SafeBepositBoxImage": "Caja Fuerte",
         "KeepYourPasswordsSafe": "Guarda aquí todas tus contraseñas, datos o cualquier información, olvida las notas de papel y las aplicaciones no protegidas.",
@@ -36,6 +36,6 @@
         "cancelButton": "Cancelar",
         "nextButton": "Siguiente",
         "successButton": "Acceder",
-        "errorButton": "Volver a Password Manager" 
+        "errorButton": "Volver a Password Manager"
     }
 }

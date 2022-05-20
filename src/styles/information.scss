@@ -6,19 +6,26 @@
     .checkbox {
       display: flex;
       position: relative;
-      .input {
-          position: absolute;
-          top: 4px;
+      &-input {
+        position: absolute;
+        top: 5px;
       }
       .text {
-          margin-left: 2em;
+        color: #345568;
+        margin-left: 2em;
       }
-  }
+    }
+    .container {
+      padding: 1.5em;
+      display: flex;
+      justify-content: space-between;
+      border-top: 0.02em solid #ababab;
+    }
   }
   &-section {
     display: flex;
     flex-direction: column;
-    padding:  1.8em;
+    padding: 1.8em;
     gap: 0.8em;
     .image {
       @media (min-width: 768px) {
@@ -26,5 +33,4 @@
       }
     }
   }
-  
 }

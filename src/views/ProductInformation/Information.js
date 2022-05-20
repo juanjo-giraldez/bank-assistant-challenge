@@ -25,6 +25,7 @@ const Information = () => {
   const handleCheckboxActive = (event) => {
     setOnehabilita(event.target.checked);
   };
+  console.log('first', onehabilita);
   return (
     <div className="card-info">
       <ProgressBar />
@@ -52,7 +53,7 @@ const Information = () => {
         />
         <article className="checkbox">
           <input
-            className="input"
+            className="checkbox-input"
             id="check1"
             name="check1"
             type="checkbox"
@@ -63,12 +64,14 @@ const Information = () => {
       </section>
       <footer className="container">
         <Button text={t('general.cancelButton')} functions={previousPage} />
-        <Button
-          text={t('general.nextButton')}
-          noActive={onehabilita}
-          functions={nextPage}
-          style="dark"
-        />
+        <button
+          type="button"
+          disabled={!onehabilita}
+          className="dark"
+          onClick={nextPage}
+        >
+          {t('general.nextButton')}
+        </button>
       </footer>
     </div>
   );

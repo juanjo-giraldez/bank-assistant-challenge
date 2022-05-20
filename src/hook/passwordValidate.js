@@ -4,21 +4,21 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable consistent-return */
 /* eslint-disable no-console */
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { t } from 'i18next';
 
 export const passwordValidate = () => {
+  const [match, setMatch] = useState({ match:null });
   const [password, setPassword] = useState({
     password: '',
     confirmPassword: '',
+    commentClue: '',
     strength: -1,
     showPasswordOne: false,
     showPasswordTwo: false,
-    match: false,
-  });
-  const [error, setError] = useState({
-    password: '',
-    confirmPassword: '',
+    match: null,
+    passwordError: '',
+    confirmPasswordError: '',
   });
 
   const evaluateStrength = (aValue) => {
@@ -52,34 +52,35 @@ export const passwordValidate = () => {
     newState[name] = value;
     setPassword(newState);
     validateInput(e);
-    match();
-    console.log(match());
-  };
-
-  const match = () => {
-    if (password.password === password.confirmPassword) { return false; }
-    return true;
   };
 
   const validateInput = (e) => {
     const { name, value } = e.target;
 
-    setError((prev) => {
-      const stateObj = { ...prev, [name]: '' };
+    setPassword((prev) => {
+      const newName = `${name}Error`;
+      const stateObj = { ...prev, [newName]: '' };
       switch (name) {
         case 'password':
           if (!value) {
-            stateObj[name] = t('form.errorPassword');
+            stateObj[newName] = t('form.errorPassword');
+            setMatch(false);
           } else if (value === password.confirmPassword) {
-            stateObj[name] = t('form.macht');
+            setMatch(true);
+          } else if (value !== password.confirmPassword) {
+            setMatch(false);
           }
           break;
 
         case 'confirmPassword':
           if (!value) {
-            stateObj[name] = t('form.errorConfirmPassword');
+            stateObj[newName] = t('form.errorConfirmPassword');
+            setMatch(false);
           } else if (value === password.password) {
-            stateObj[name] = t('form.macht');
+            stateObj[newName] = t('form.macht');
+            setMatch(true);
+          } else if (value !== password.password) {
+            setMatch(false);
           }
           break;
 
@@ -123,8 +124,6 @@ export const passwordValidate = () => {
 
   return {
     password,
-    error,
-    match,
     displayBar,
     handleOnChange,
     handleClickShowPassword,

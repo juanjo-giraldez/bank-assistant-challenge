@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable no-console */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/progress-bar.scss';
 
@@ -9,19 +9,22 @@ export const ProgressBar = () => {
 
   const location = useLocation();
 
-  const styles = document.querySelectorAll('.FormStepIcon');
-  styles.forEach((item) => {
-    item.classList.remove('is-active');
+  useEffect(() => {
+    const styles = document.querySelectorAll('.FormStepIcon');
+    styles.forEach((item) => {
+      item.classList.remove('is-active');
 
-    console.log('===============================', location.pathname === '/form', item.getAttribute('id').includes('2'));
-    if (item.getAttribute('id').includes('1') && location.pathname === '/') {
-      item.classList.add('is-active');
-    }
+      if (item.getAttribute('id').includes('1') && location.pathname === '/information') {
+        item.classList.add('is-active');
+      }
 
-    if (location.pathname === '/form' && item.getAttribute('id').includes('2')) {
-      console.log('estoy aquisition');
-      item.classList.add('is-active');
-    }
+      if (location.pathname === '/form' && item.getAttribute('id').includes('2')) {
+        item.classList.add('is-active');
+      }
+      if (location.pathname === '/feedback' && item.getAttribute('id').includes('3')) {
+        item.classList.add('is-active');
+      }
+    });
   });
 
   return (

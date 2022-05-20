@@ -1,8 +1,12 @@
 .text-area {
+  
   > div {
     width: 90%;
   }
-  textarea {
+  input {
+    font-family: 'Quicksand', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     border: 1px solid #ababab;
     margin-top: 1em;
     padding: 10px;
@@ -15,7 +19,7 @@
     font-style: 1.2em;
     font-weight: 900;
   }
-  textarea,
+  input,
   label {
     display: block;
   }

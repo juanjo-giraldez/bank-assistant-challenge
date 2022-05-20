@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  display: flex;
+  margin: auto;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  section {
+    background: #fff;
+    border: 1px solid #989fa4;
+
+    .message {
+      padding: 2em;
+      display: flex;
+      .success-img,
+      .fail-img {
+        width: 50px;
+        margin-right: 1em;
+      }
+      .text {
+        &-title {
+          font-size: 1.5em;
+        }
+        &-description {
+          color: #345568;
+        }
+      }
+    }
+    .container {
+      .footer-btn {
+        display: flex;
+        justify-content: flex-end ;
+      }
+    }
+  }
+}

@@ -11,7 +11,7 @@ export const TextArea = () => {
     <div className="text-area">
       <label>{t('form.titleClues')}</label>
       <div>
-        <textarea
+        <input
           id="clue"
           type="text"
           placeholder={t('form.titleForm')}
