@@ -17,7 +17,7 @@ describe('Form component', () => {
   it('should render Form component', async () => {
 
     // eslint-disable-next-line no-shadow
-    const formTest = await screen.findByRole('section', { name: 'form-Password' });
+    const formTest = await screen.findByRole('banner', { name: 'Card-header-Progress-bar' });
 
     expect(formTest).toBeInTheDocument();
   });

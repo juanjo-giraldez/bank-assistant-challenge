@@ -16,19 +16,11 @@ describe('Information component', () => {
   beforeEach(() => {
     informationTest();
   });
-  it('should render Information component', async () => {
+  it('should render title in form view component', async () => {
 
     const information = await screen.findByRole('region', { name: 'info-product-openclose' });
 
     expect(information).toBeInTheDocument();
-  });
-
-  it('should pressed button next in information component', async () => {
-    const buttonSpy = jest.spyOn(Information, 'buttonPressed');
-    const button = document.querySelector('dark');
-    button.dispatchEvent(new MouseEvent('click', { bubbles: true }));
-    expect(buttonSpy).toBeCalledTimes(1);
-
   });
 
 });

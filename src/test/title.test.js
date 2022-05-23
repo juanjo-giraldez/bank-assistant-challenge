@@ -5,10 +5,7 @@ import '@testing-library/jest-dom/extend-expect';
 import Title from '../components/Title';
 
 describe('title component', () => {
-
-  const titleTest = () => render(
-    <Title title="title-test" />,
-  );
+  const titleTest = () => render(<Title title="title-test" />);
   beforeEach(() => {
     titleTest();
   });
@@ -20,6 +17,7 @@ describe('title component', () => {
       <h1
         aria-label="heading-title"
         class="title"
+        id="title"
       >
         title-test
       </h1>
@@ -32,5 +30,4 @@ describe('title component', () => {
     expect(titleClass).toBeInTheDocument();
     expect(titleClass).toHaveClass('title');
   });
-
 });

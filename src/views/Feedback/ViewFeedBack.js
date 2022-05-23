@@ -48,16 +48,17 @@ const ViewFeedBack = () => {
         </section>
       </div>
     </div>) : (
-    <section className="modal" aria-label="section-modal-failed">
-      <div className="feedBack">
+    <div className="modal" aria-label="modal-success">
+      <div className="background">
+      <section className="failed" aria-label="region-modal-success">
       <ProgressBar />
-        <article className="message" aria-label="article-modal-failed">
+        <div className="message" aria-label="article-modal-failed">
           <img id="img-failed" className="fail-img" src={Warning} alt="Warning-failed" />
           <div className="text">
             <h2 className="text-title">{t('feedback.titlesError')}</h2>
             <p className="text-description">{t('feedback.textError')}</p>
           </div>
-        </article>
+        </div>
         <footer className="container" aria-label="footer-modal-failed">
           <div className="footer-btn">
             <button className="pink" type="Button" onClick={closeModal}>
@@ -65,8 +66,9 @@ const ViewFeedBack = () => {
             </button>
           </div>
         </footer>
+      </section>
       </div>
-    </section>
+    </div>
   ));
 };
 export default ViewFeedBack;
