@@ -34,7 +34,7 @@ const ViewFeedBack = () => {
         <section className="success" aria-label="region-modal-success">
         <ProgressBar />
           <div className="message" aria-label="article-modal-success">
-            <img className="success-img" src={CheckSuccess} alt="success-create" />
+            <img id="img-success" className="success-img" src={CheckSuccess} alt="success-create" />
             <div className="text">
               <h2 className="text-title">{t('feedback.titlesSuccess')}</h2>
               <p className="text-description">{t('feedback.textDescription')}</p>
@@ -52,7 +52,7 @@ const ViewFeedBack = () => {
       <div className="feedBack">
       <ProgressBar />
         <article className="message" aria-label="article-modal-failed">
-          <img className="fail-img" src={Warning} alt="Warning-failed" />
+          <img id="img-failed" className="fail-img" src={Warning} alt="Warning-failed" />
           <div className="text">
             <h2 className="text-title">{t('feedback.titlesError')}</h2>
             <p className="text-description">{t('feedback.textError')}</p>

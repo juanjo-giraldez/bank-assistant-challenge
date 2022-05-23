@@ -54,8 +54,8 @@ const Information = () => {
         <article className="checkbox">
           <input
             className="checkbox-input"
-            id="check1"
-            name="check1"
+            id="checkBox"
+            name="checkBox"
             type="checkbox"
             onChange={handleCheckboxActive}
           />
@@ -68,6 +68,7 @@ const Information = () => {
       <footer className="container">
         <Button text={t('general.cancelButton')} functions={previousPage} />
         <button
+          id="btn-next"
           type="button"
           disabled={!onehabilita}
           className="dark"

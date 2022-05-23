@@ -62,6 +62,7 @@ const Form = () => {
           <div className="field-container">
             <label htmlFor="Password">{t('form.LabelCreatePassword')}</label>
             <input
+              id="password"
               type={password.showPasswordOne ? 'text' : 'password'}
               name="password"
               onChange={handleOnChange}
@@ -81,6 +82,7 @@ const Form = () => {
             {displayBar()}
             {password.passwordError && (
             <div
+              id="message-tag-password"
               className={
                 password.passwordError === 'Macht' || password.confirmPasswordError === 'Coinciden'
                   ? 'macht'
@@ -94,6 +96,7 @@ const Form = () => {
           <div className="field-container">
             <label htmlFor="Repeat">{t('form.reEnterYourRassword')}</label>
             <input
+              id="confirmPassword"
               type={password.showPasswordTwo ? 'text' : 'password'}
               name="confirmPassword"
               onChange={handleOnChange}
@@ -112,6 +115,7 @@ const Form = () => {
             </div>
             {password.confirmPasswordError && (
             <div
+              id="message-tag-pconfirmPassword"
               className={
                 password.confirmPasswordError === 'Macht'
                 || password.confirmPasswordError === 'Coinciden'
@@ -131,6 +135,7 @@ const Form = () => {
       <footer className="container">
         <Button text={t('general.cancelButton')} functions={previousPage} />
         <button
+          id="btn-next"
           type="submit"
           disabled={password.password !== null
             && password.password.length > 0
